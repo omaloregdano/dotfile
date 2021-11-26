@@ -1,0 +1,73 @@
+# 基於那個配置檔案
+BasedOnStyle:    LLVM
+# 訪問說明符的偏移(public private)
+AccessModifierOffset: -4
+# 括號之後,水平對齊引數: Align DontAlign AlwaysBreak
+AlignAfterOpenBracket: Align
+# 連續的賦值時,對齊所有的等號
+AlignConsecutiveAssignments: true
+# 連續宣告時，對齊所有宣告的變數名
+AlignConsecutiveDeclarations: true
+# 左對齊換行(使用反斜槓換行)的反斜槓 
+AlignEscapedNewlinesLeft: true
+# 水平對齊二元和三元表示式的運算元 
+AlignOperands: true
+# 對齊連續的尾隨的註釋  
+AlignTrailingComments: true
+# 允許函式宣告的所有引數在放在下一行  
+AllowAllParametersOfDeclarationOnNextLine: true
+# 允許短的塊放在同一行  
+AllowShortBlocksOnASingleLine : false
+# 允許短的case標籤放在同一行
+AllowShortCaseLabelsOnASingleLine: false
+# 允許短的函式放在同一行: None, InlineOnly(定義在類中), Empty(空函式), Inline(定義在類中，空函式), All 
+AllowShortFunctionsOnASingleLine: Empty
+# 是否允許短if單行 If true, if (a) return; 可以放到同一行
+AllowShortIfStatementsOnASingleLine: false
+# 允許短的迴圈保持在同一行   
+AllowShortLoopsOnASingleLine: false 
+# 總是在定義返回型別後換行(deprecated)   
+AlwaysBreakAfterDefinitionReturnType: None
+# 每行字元的限制，0表示沒有限制  
+ColumnLimit: 100
+# 描述具有特殊意義的註釋的正則表示式，它不應該被分割為多行或以其它方式改變
+CommentPragmas: '^ IWYU pragma:'
+# 語言: None Cpp Java Objc Protp
+Language: Cpp 
+#指標的*的挨著哪邊
+PointerAlignment: Right
+#縮排寬度
+IndentWidth: 4
+# 連續的空行保留幾行
+MaxEmptyLinesToKeep: 1
+# 在 @property 後面新增空格, \@property (readonly) 而不是 \@property(readonly).
+ObjCSpaceAfterProperty: true
+# OC block後面的縮排
+ObjCBlockIndentWidth: 4
+# 是否允許短方法單行
+AllowShortFunctionsOnASingleLine: false
+# 換行的時候對齊操作符
+#AlignOperands: true
+# 中括號兩邊空格 [] 
+SpacesInSquareBrackets: true
+# 小括號兩邊新增空格
+SpacesInParentheses : false
+#等號兩邊的空格
+SpaceBeforeAssignmentOperators: true
+# 容器類的空格 例如 OC的字典
+SpacesInContainerLiterals: true
+#縮排
+IndentWrappedFunctionNames: true
+#在block從空行開始
+KeepEmptyLinesAtTheStartOfBlocks: true
+#在建構函式初始化時按逗號斷行，並以冒號對齊
+BreakConstructorInitializersBeforeComma: true
+#括號後新增空格
+SpaceAfterCStyleCast: false
+# 允許排序#include, 造成編譯錯誤
+# SortIncludes: true 
+# 縮排case 標籤
+IndentCaseLabels: true 
+#tab鍵盤的寬度
+TabWidth: 4
+UseTab: Never
